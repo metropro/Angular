@@ -34,6 +34,11 @@ addTodo(): void {
   }
 }
 
+emptyTodoTrash(): void {
+  this.todos = this.todos.filter(todo => !todo.isDeleted);
+  
+  }
+
   ngOnInit() {
   }
 
