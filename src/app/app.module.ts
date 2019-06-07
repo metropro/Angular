@@ -8,6 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { TodoComponent } from './todo/todo.component';
 import { CharactersComponent } from './characters/characters.component';
 import { IndividualCharacterComponent } from './individual-character/individual-character.component';
+import { ContactComponent } from './contact/contact.component';
+import { EmailComponent}  from './components/email.component';
+import { PhoneComponent } from './components/phone.component';
+import { PhonePipe } from './pipes/phone.pipe';
+
+
 
 
 @NgModule({
@@ -16,7 +22,11 @@ import { IndividualCharacterComponent } from './individual-character/individual-
     HomeComponent,
     TodoComponent,
     CharactersComponent,
-    IndividualCharacterComponent
+    IndividualCharacterComponent,
+    ContactComponent,
+    EmailComponent,
+    PhonePipe,
+    PhoneComponent
   ],
   imports: [
     BrowserModule,
