@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { EmailComponent}  from './components/email.component';
 import { PhoneComponent } from './components/phone.component';
 import { PhonePipe } from './pipes/phone.pipe';
+import { AmiibosComponent } from './amiibos/amiibos.component';
+import { IndividualAmiiboComponent } from './individual-amiibo/individual-amiibo.component';
 
 
 
@@ -26,12 +29,15 @@ import { PhonePipe } from './pipes/phone.pipe';
     ContactComponent,
     EmailComponent,
     PhonePipe,
-    PhoneComponent
+    PhoneComponent,
+    AmiibosComponent,
+    IndividualAmiiboComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
